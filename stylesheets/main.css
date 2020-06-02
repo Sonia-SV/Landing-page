@@ -41,20 +41,20 @@ html {
 }
 .header-logo {
   display: inline-block;
-  width: 155px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  width: 9.688rem;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
 }
 
 .menu ul {
   margin: 0;
   padding-left: 0;
-  width: 155px;
+  width: 9.688rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   color: var(--dark-color);
-  margin-bottom: 13px;
+  margin-bottom: 0.8125rem;
   font-size: 1rem;
 }
 .menu li {
@@ -63,16 +63,16 @@ html {
 
 .menu li a {
   color: var(--dark-color);
-  padding-top: 5px;
-  padding-bottom: 13px;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.8125rem;
 }
 
 .menu li a:first-child {
-  padding-right: 10px;
+  padding-right: 0.625rem;
 }
 
 .menu li a:nth-child(2) {
-  padding-left: 10px;
+  padding-left: 0.625rem;
 }
 
 /* MAIN */
@@ -108,8 +108,8 @@ html {
     align-items: center;
   }
   .header-logo {
-    width: 155px;
-    padding: 20px 30px 20px 30px;
+    width: 9.688rem;
+    padding: 1.25rem 1.875rem 1.25rem 1.875rem;
   }
 
   .menu ul {
@@ -117,11 +117,11 @@ html {
     padding-left: 0;
     width: auto;
     justify-content: flex-end;
-    margin-right: 20px;
+    margin-right: 1.25rem;
   }
 
   .menu li a {
-    padding: 20px 10px 20px 10px;
+    padding: 1.25rem 0.625rem 1.25rem 0.625rem;
   }
 
   /* MAIN */
