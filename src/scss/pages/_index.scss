@@ -1,0 +1,33 @@
+/* MAIN */
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background-color: $main-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__tittle {
+  color: $light-color;
+  margin: 0;
+  font-size: 1.875rem;
+  line-height: 2.5rem;
+  text-transform: capitalize;
+}
+
+.main__tittle span {
+  display: block;
+  text-align: center;
+}
+
+@media all and (min-width: 768px) {
+  /* MAIN */
+
+  .main__tittle {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+}
