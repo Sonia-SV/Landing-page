@@ -1,4 +1,10 @@
+@import "core/variables";
+@import "core/mixins";
 @import "core/reset";
+@import "layout/page";
+@import "layout/header";
+@import "pages/index";
+
 /* GENERIC */
 
 * {
@@ -23,14 +29,9 @@ html {
   font-size: 16px;
 }
 
-.wrapper {
-  margin: auto;
-  width: 100%;
-}
-
 /* HEADER */
 
-.menu {
+.header__menu {
   background-color: var(--light-color);
   width: 100%;
   display: flex;
@@ -40,14 +41,14 @@ html {
   position: fixed;
   top: 0;
 }
-.header-logo {
+.header__menu__logo {
   display: inline-block;
   width: 9.688rem;
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
 }
 
-.menu ul {
+.header__menu__links {
   margin: 0;
   padding-left: 0;
   width: 9.688rem;
@@ -58,21 +59,22 @@ html {
   margin-bottom: 0.8125rem;
   font-size: 1rem;
 }
-.menu li {
+.header__menu__links li {
   display: inline-block;
 }
 
-.menu li a {
+.header__menu__links li a {
   color: var(--dark-color);
   padding-top: 0.3125rem;
   padding-bottom: 0.8125rem;
+  text-transform: uppercase;
 }
 
-.menu li a:first-child {
+.header__menu__links li a:first-child {
   padding-right: 0.625rem;
 }
 
-.menu li a:nth-child(2) {
+.header__menu__links li a:nth-child(2) {
   padding-left: 0.625rem;
 }
 
@@ -88,14 +90,15 @@ html {
   align-items: center;
 }
 
-.title {
+.main__tittle {
   color: var(--light-color);
   margin: 0;
   font-size: 1.875rem;
   line-height: 2.5rem;
+  text-transform: capitalize;
 }
 
-.title span {
+.main__tittle span {
   display: block;
   text-align: center;
 }
@@ -103,17 +106,17 @@ html {
 @media all and (min-width: 768px) {
   /* HEADER */
 
-  .menu {
+  .header__menu {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
-  .header-logo {
+  .header__menu__logo {
     width: 9.688rem;
     padding: 1.25rem 1.875rem 1.25rem 1.875rem;
   }
 
-  .menu ul {
+  .header__menu__links {
     margin: 0;
     padding-left: 0;
     width: auto;
@@ -121,13 +124,13 @@ html {
     margin-right: 1.25rem;
   }
 
-  .menu li a {
+  .header__menu__links li a {
     padding: 1.25rem 0.625rem 1.25rem 0.625rem;
   }
 
   /* MAIN */
 
-  .title {
+  .main__tittle {
     font-size: 2.5rem;
     line-height: 3rem;
   }
